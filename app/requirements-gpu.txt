@@ -1,0 +1,22 @@
+# Smart Traffic Tracking — máy có GPU NVIDIA (CUDA)
+#
+# BƯỚC 1 (bắt buộc, làm TRƯỚC): cài PyTorch bản CUDA từ index riêng của PyTorch, ví dụ CUDA 12.6:
+#   pip install torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cu126
+#   (driver mới hỗ trợ CUDA 13 có thể dùng .../whl/cu130; xem https://pytorch.org/get-started/locally/)
+# BƯỚC 2: pip install -r requirements-gpu.txt
+#
+# Phiên bản đã giả định / đã chạy thử (chỉ chạy thử trên CPU, Linux, Python 3.14.7):
+#   torch 2.14.1, torchvision 0.29.1, ultralytics 8.4.172, streamlit 1.65.0,
+#   opencv-python 5.0.0.93, imageio-ffmpeg 0.6.0, pandas 3.0.6, numpy 2.5.2, lap 0.5.13
+# Mô hình được huấn luyện bằng ultralytics 8.4.137/8.4.138; app tương thích cả tham số `half` (bản cũ)
+# và `quantize` (bản mới) nhưng mới chạy thử thực tế với 8.4.172.
+# Dòng torch/torchvision dưới đây chỉ để kiểm tra đã cài; nếu chưa làm BƯỚC 1, pip trên Windows sẽ cài bản CPU.
+torch>=2.4
+torchvision>=0.19
+ultralytics>=8.4.138,<8.5
+streamlit>=1.65,<2
+opencv-python>=4.9
+imageio-ffmpeg>=0.5
+pandas>=2.0
+numpy>=1.24
+lap>=0.5.12

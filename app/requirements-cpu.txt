@@ -1,0 +1,18 @@
+# Smart Traffic Tracking — máy KHÔNG có GPU (chỉ CPU)
+#
+# BƯỚC 1 (khuyến nghị, làm TRƯỚC): cài PyTorch bản CPU (nhẹ hơn nhiều so với bản CUDA):
+#   pip install torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cpu
+# BƯỚC 2: pip install -r requirements-cpu.txt
+#
+# Phiên bản đã giả định / đã chạy thử (CPU, Linux, Python 3.14.7):
+#   torch 2.14.1+cpu, torchvision 0.29.1+cpu, ultralytics 8.4.172, streamlit 1.65.0,
+#   opencv-python 5.0.0.93, imageio-ffmpeg 0.6.0, pandas 3.0.6, numpy 2.5.2, lap 0.5.13
+torch>=2.4
+torchvision>=0.19
+ultralytics>=8.4.138,<8.5
+streamlit>=1.65,<2
+opencv-python>=4.9
+imageio-ffmpeg>=0.5
+pandas>=2.0
+numpy>=1.24
+lap>=0.5.12

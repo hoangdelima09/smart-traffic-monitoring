@@ -1,0 +1,14 @@
+# Cấu hình Streamlit cho Smart Traffic Tracking.
+# Streamlit đọc file này từ thư mục .streamlit/ trong THƯ MỤC ĐANG ĐỨNG khi chạy lệnh,
+# vì vậy hãy chạy `streamlit run app.py` từ chính thư mục chứa app.py.
+
+[server]
+# Kích thước tối đa mỗi file tải lên (MB): video và file .pt.
+maxUploadSize = 1000
+
+[runner]
+# Bắt buộc để nút "Dừng" ngắt được vòng lặp xử lý ngay (mặc định của Streamlit cũng là true).
+fastReruns = true
+
+[browser]
+gatherUsageStats = false
