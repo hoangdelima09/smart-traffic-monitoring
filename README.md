@@ -50,7 +50,3 @@ Phải chạy từ thư mục `app/` để Streamlit đọc `.streamlit/config.t
 ## Dữ liệu
 
 Dùng bộ **BDD100K** (Yu et al., CVPR 2020) đã chuyển sang định dạng YOLO, lấy từ notebook Kaggle [BDD100K with YOLO – Setup and Training Validation](https://www.kaggle.com/code/a7madmostafa/bdd100k-with-yolo-setup-and-training-validation) của tác giả `a7madmostafa`. Nhóm không tự thu thập hay gán nhãn; chỉ làm sạch nhãn train/val. Điều khoản sử dụng theo BDD100K và trang Kaggle gốc. Dữ liệu không nằm trong repo.
-
-## Lưu ý
-
-Metadata `model.names` trong `best_final.pt` sai thứ tự ở các id 5, 7, 8, 9 (chỉ số đánh giá không bị ảnh hưởng). App dùng bảng lớp cố định nên hiển thị đúng.
